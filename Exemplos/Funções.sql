@@ -44,9 +44,9 @@ END;
 
 -- Explicação:
 
---      CREATE OR REPLACE FUNCTION                              =>  Cria a função, substituindo-a se já existir.
---      RETURN VARCHAR2                                         =>  Declara que o valor de retorno da função será do tipo VARCHAR2 (não precisa retornar os dois).
---      IS                                                      =>  Inicia a definição do corpo da função.
---      BEGIN...END;                                            =>  Define o bloco executável da função.
---      RETURN 'OLÁ [NOME], SUA IDADE É [IDADE] ANOS. WORLD!';  =>  Retorna o valor desejado, só que agora com os parâmetros.
+--      CREATE OR REPLACE FUNCTION                        =>  Cria a função, substituindo-a se já existir.
+--      RETURN VARCHAR2                                   =>  Declara que o valor de retorno da função será do tipo VARCHAR2 (não precisa retornar os dois).
+--      IS                                                =>  Inicia a definição do corpo da função.
+--      BEGIN...END;                                      =>  Define o bloco executável da função.
+--      RETURN 'OLÁ [NOME], SUA IDADE É [IDADE] ANOS.';   =>  Retorna o valor desejado, só que agora com os parâmetros.
 

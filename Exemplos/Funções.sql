@@ -46,3 +46,21 @@ END;
 --      BEGIN...END;                                =>  Define o bloco executável da função.
 --      RETURN 'OLÁ Odair, SUA IDADE É 34 ANOS.';   =>  Retorna o valor desejado, só que agora com os parâmetros. " Preferia 18 :( " 
 
+
+-- Como criar uma função com parâmetros que executam algo:
+
+CREATE OR REPLACE FUNCTION CALCULO_SOMA (
+	VALOR1 IN NUMBER, 
+	VALOR2 IN NUMBER
+) 
+RETURN VARCHAR IS
+BEGIN 
+	RETURN 'SOMA DE  ' || VALOR1 || ' + ' || VALOR2 || ' = ' || (VALOR1 + VALOR2);
+END;
+
+-- Chamando a função:
+
+    SELECT CALCULO_SOMA(4, 3) 
+    FROM DUAL
+
+

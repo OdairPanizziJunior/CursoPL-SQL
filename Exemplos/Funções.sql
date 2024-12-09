@@ -22,10 +22,6 @@
 
 
 
-
-
-
-
 -- Como criar uma função com parâmetros:
 
 CREATE OR REPLACE FUNCTION SAUDACAO_PESSOA (

@@ -1,10 +1,14 @@
-CREATE OR REPLACE FUNCTION HELLO_WORLD
-RETURN VARCHAR2 IS
-BEGIN
-   RETURN 'HELLO WORLD!';
-END;
+-- Como criar uma função simples:
 
-SELECT HELLO_WORLD FROM DUAL 
+    CREATE OR REPLACE FUNCTION HELLO_WORLD -- Nome da função => HELLO_WORLD
+    RETURN VARCHAR2 IS                     -- Toda Função exige um retorno
+    BEGIN
+        RETURN 'HELLO WORLD!';
+    END;
+
+-- Chamando a função:
+
+    SELECT HELLO_WORLD FROM DUAL 
 
 
 

@@ -1,15 +1,26 @@
 -- Como criar uma função simples:
 
-    CREATE OR REPLACE FUNCTION HELLO_WORLD -- Nome da função => HELLO_WORLD
-    RETURN VARCHAR2 IS                     -- Toda Função exige um retorno
+    CREATE OR REPLACE FUNCTION HELLO_WORLD
+    RETURN VARCHAR2 IS
     BEGIN
         RETURN 'HELLO WORLD!';
     END;
 
 -- Chamando a função:
 
-    SELECT HELLO_WORLD FROM DUAL 
+    SELECT HELLO_WORLD 
+    FROM DUAL 
 
+-- Explicação:
+
+--      CREATE OR REPLACE FUNCTION      =>    Cria a função, substituindo-a se já existir.
+--      RETURN VARCHAR2                 =>    Declara que o valor de retorno da função será do tipo VARCHAR2.
+--      IS                              =>    Inicia a definição do corpo da função.
+--      BEGIN...END;                    =>    Define o bloco executável da função.
+--      RETURN 'HELLO WORLD!';          =>    Retorna o valor desejado.
+
+
+--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/--/
 
 
 CREATE OR REPLACE FUNCTION SAUDACAO_PESSOA (

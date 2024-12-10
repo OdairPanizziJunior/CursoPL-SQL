@@ -19,6 +19,8 @@
 --      BEGIN...END;                  =>  Define o bloco executável da função.
 --      RETURN 'HELLO WORLD!';        =>  Retorna o valor desejado.
 
+	    
+-- 8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
 
 
 -- Como criar uma função com parâmetros:
@@ -46,8 +48,9 @@ END;
 --      RETURN 'OLÁ Odair, SUA IDADE É 34 ANOS.';   =>  Retorna o valor desejado, só que agora com os parâmetros. " Preferia 18 :( " 
 
 
+-- 8888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888888
 
-
+	    
 -- Como criar uma função com parâmetros que executam algo:
 
 CREATE OR REPLACE FUNCTION CALCULO_SOMA (
@@ -66,7 +69,9 @@ END;
 
 -- Explicação:
 
---      CREATE OR REPLACE FUNCTION    =>  Cria a função, substituindo-a se já existir.
---      RETURN VARCHAR2               =>  Declara que o valor de retorno da função será do tipo VARCHAR2 (retorno é o tipo de dado).
---      IS                            =>
+--      CREATE OR REPLACE FUNCTION      =>  Cria a função, substituindo-a se já existir.
+--      RETURN VARCHAR2                 =>  Declara que o valor de retorno da função será do tipo VARCHAR2 (retorno é o tipo de dado).
+--      IS                              =>  Inicia a definição do corpo da função.
+--      BEGIN...END;                    =>  Define o bloco executável da função.
+--      RETURN 'SOMA DE 10 + 5 = 15';   =>  Retorna o valor desejado, somando os dois campos. 
 
